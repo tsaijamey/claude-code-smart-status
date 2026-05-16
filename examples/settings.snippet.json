@@ -1,0 +1,35 @@
+{
+  "_comment": "Drop these fragments into your ~/.claude/settings.json. Do NOT replace the whole file — merge into existing 'hooks' and 'statusLine' fields. All hook 'command' paths must be absolute (expand ~ yourself; Claude Code does not expand it in this field).",
+
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/YOUR_USERNAME/.claude/hooks/statusline-files-tracker.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/home/YOUR_USERNAME/.claude/hooks/claude-stop-bell.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
+
+  "statusLine": {
+    "type": "command",
+    "command": "/home/YOUR_USERNAME/.claude/statusline.sh"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "claude-code-smart-status",
+  "owner": {
+    "name": "your-github-handle",
+    "url": "https://github.com/your-github-handle"
+  },
+  "metadata": {
+    "description": "This skill should be used when customizing Claude Code's terminal statusline and lifecycle hooks to surface richer per-session information (cost, rate limits, effort level, modified files) and add ambient audio feedback (bell on session stop). Use it whenever the user asks to extend the statusline, show modified files in the prompt, add a sound when Claude finishes, monitor session idle state, or otherwise turn Claude Code's quiet surfaces into glanceable workspace signals. Trigger phrases: customize statusline, extend statusline, claude code statusline, add bell sound, sound when claude finishes, show modified files in statusline, session aware prompt, ambient feedback, statusline hooks, PostToolUse hook for file tracking, Stop hook bell, refreshInterval statusline, session idle indicator, claude code config, 自定义 statusline, claude code 提示音, 会话铃声, 显示修改过的文件, 会话状态指示, 编辑状态铃声.",
+    "version": "0.1.0",
+    "homepage": "https://frago.ai",
+    "keywords": [
+      "frago",
+      "statusline",
+      "claude-code-hooks",
+      "session-awareness",
+      "ambient-feedback",
+      "terminal-prompt",
+      "shell-hooks",
+      "developer-experience"
+    ]
+  },
+  "plugins": [
+    {
+      "name": "claude-code-smart-status",
+      "source": "./",
+      "description": "This skill should be used when customizing Claude Code's terminal statusline and lifecycle hooks to surface richer per-session information (cost, rate limits, effort level, modified files) and add ambient audio feedback (bell on session stop). Use it whenever the user asks to extend the statusline, show modified files in the prompt, add a sound when Claude finishes, monitor session idle state, or otherwise turn Claude Code's quiet surfaces into glanceable workspace signals. Trigger phrases: customize statusline, extend statusline, claude code statusline, add bell sound, sound when claude finishes, show modified files in statusline, session aware prompt, ambient feedback, statusline hooks, PostToolUse hook for file tracking, Stop hook bell, refreshInterval statusline, session idle indicator, claude code config, 自定义 statusline, claude code 提示音, 会话铃声, 显示修改过的文件, 会话状态指示, 编辑状态铃声."
+    }
+  ]
+}
